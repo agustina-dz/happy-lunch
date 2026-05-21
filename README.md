@@ -3,7 +3,7 @@
 A pixel-art food-ordering app built with React.
 
 [![Live Demo](https://img.shields.io/badge/🍌_Live_Demo_>>-D2554D?style=for-the-badge)](https://agustinadz-happy-lunch.vercel.app/)\
-![Happy Lunch ! site screenshot](screenshots/screenshot.png)
+[![Happy Lunch ! site screenshot](screenshots/screenshot.png)](https://agustinadz-happy-lunch.vercel.app/)
 
 ## Features
 
@@ -41,4 +41,5 @@ Built by **Agustina Díaz** for the [Talento Tech](https://talentotech.bue.edu.a
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 [![React](https://img.shields.io/badge/React-72CEE2?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-BFAAFF?style=for-the-badge&logo=vite&logoColor=black)](https://vite.dev/)
-[![React Router](https://img.shields.io/badge/React_Router-F44250?style=for-the-badge&logo=reactrouter&logoColor=white)](https://reactrouter.com/)
+[![React Router](https://img.shields.io/badge/React_Router-F44250?style=for-the-badge&logo=reactrouter&logoColor=white)](https://reactrouter.com/)\
+[![Deployed with Vercel](https://img.shields.io/badge/Deployed_with_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://agustinadz-happy-lunch.vercel.app/)
