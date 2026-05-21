@@ -42,4 +42,4 @@ Built by **Agustina Díaz** for the [Talento Tech](https://talentotech.bue.edu.a
 [![React](https://img.shields.io/badge/React-72CEE2?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-BFAAFF?style=for-the-badge&logo=vite&logoColor=black)](https://vite.dev/)
 [![React Router](https://img.shields.io/badge/React_Router-F44250?style=for-the-badge&logo=reactrouter&logoColor=white)](https://reactrouter.com/)\
-[![Deployed with Vercel](https://img.shields.io/badge/Deployed_with_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://agustinadz-happy-lunch.vercel.app/)
+[![Deployed with Vercel](https://img.shields.io/badge/Deployed_with_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
