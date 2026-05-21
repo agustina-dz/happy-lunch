@@ -1,0 +1,329 @@
+[
+	{
+		"id": "bagel",
+		"name": "Bagel",
+		"description": "Fresh soft baked bagel",
+		"ingredients": [
+			"Bagel Bun",
+			"Sesame Seeds",
+			"Poppy Seeds"
+		],
+		"allergens": [
+			"Wheat",
+			"Egg",
+			"Honey"
+		],
+		"category": "bakery",
+		"price": 1.50,
+		"order_limit": 12,
+		"image": "/img/products/bagel.png",
+		"emoji": "🥯"
+	},
+	{
+		"id": "burger",
+		"name": "Burger",
+		"description": "Beef burger with cheese",
+		"ingredients": [
+			"Beef Patty",
+			"Burger Bun",
+			"Sesame Seeds",
+			"Cheese",
+			"Lettuce",
+			"Tomato"
+		],
+		"allergens": [
+			"Wheat",
+			"Milk",
+			"Egg"
+		],
+		"category": "mains",
+		"price": 4.50,
+		"order_limit": 12,
+		"image": "/img/products/burger.png",
+		"emoji": "🍔"
+	},
+	{
+		"id": "burrito",
+		"name": "Burrito",
+		"description": "Beef and beans burrito",
+		"ingredients": [
+			"Tortilla",
+			"Beef",
+			"Beans",
+			"Garlic",
+			"Onion",
+			"Tomato",
+			"Lettuce",
+			"Cheese",
+			"Bell Peppers"
+		],
+		"allergens": [
+			"Wheat"
+		],
+		"category": "mains",
+		"price": 4.50,
+		"order_limit": 12,
+		"image": "/img/products/burrito.png",
+		"emoji": "🌯"
+	},
+	{
+		"id": "cake-slice",
+		"name": "Cake Slice",
+		"description": "Chocolate cake with topping",
+		"ingredients": [
+			"Chocolate Cake",
+			"Vanilla Frosting",
+			"Strawberry Topping"
+		],
+		"allergens": [
+			"Wheat",
+			"Milk",
+			"Egg"
+		],
+		"category": "bakery",
+		"price": 2.50,
+		"order_limit": 12,
+		"image": "/img/products/cake.png",
+		"emoji": "🍰"
+	},
+	{
+		"id": "coffee",
+		"name": "Coffee",
+		"description": "Hot brewed coffee",
+		"ingredients": [
+			"Coffee Beans"
+		],
+		"allergens": [],
+		"category": "drinks",
+		"price": 1.50,
+		"order_limit": 8,
+		"image": "/img/products/coffee.png",
+		"emoji": "☕"
+	},
+	{
+		"id": "cookie",
+		"name": "Cookie",
+		"description": "Chocolate chip cookie",
+		"ingredients": [
+			"Vanilla Cookie",
+			"Chocolate Chips"
+		],
+		"allergens": [
+			"Wheat",
+			"Milk",
+			"Egg"
+		],
+		"category": "bakery",
+		"price": 1.00,
+		"order_limit": 24,
+		"image": "/img/products/cookie.png",
+		"emoji": "🍪"
+	},
+	{
+		"id": "donut",
+		"name": "Donut",
+		"description": "Glazed donut with sprinkles",
+		"ingredients": [
+			"Donut",
+			"Strawberry Glaze",
+			"Rainbow Sprinkles"
+		],
+		"allergens": [
+			"Wheat",
+			"Milk",
+			"Egg",
+			"Soy"
+		],
+		"category": "bakery",
+		"price": 1.50,
+		"order_limit": 12,
+		"image": "/img/products/donut.png",
+		"emoji": "🍩"
+	},
+	{
+		"id": "ice-cream",
+		"name": "Ice Cream",
+		"description": "Sweet strawberry ice cream",
+		"ingredients": [
+			"Strawberry Ice Cream"
+		],
+		"allergens": [
+			"Milk"
+		],
+		"category": "desserts",
+		"price": 1.50,
+		"order_limit": 12,
+		"image": "/img/products/icecream.png",
+		"emoji": "🍦"
+	},
+	{
+		"id": "jelly",
+		"name": "Jelly",
+		"description": "Sweet strawberry jelly",
+		"ingredients": [
+			"Strawberry",
+			"Gelatin"
+		],
+		"allergens": [],
+		"category": "desserts",
+		"price": 1.50,
+		"order_limit": 12,
+		"image": "/img/products/jelly.png",
+		"emoji": null
+	},
+	{
+		"id": "juice",
+		"name": "Juice",
+		"description": "Fresh orange juice",
+		"ingredients": [
+			"Oranges"
+		],
+		"allergens": [],
+		"category": "drinks",
+		"price": 1.80,
+		"order_limit": 24,
+		"image": "/img/products/juice.png",
+		"emoji": "🧃"
+	},
+	{
+		"id": "muffin",
+		"name": "Muffin",
+		"description": "Vanilla muffin with chips",
+		"ingredients": [
+			"Vanilla Muffin",
+			"Chocolate chips"
+		],
+		"allergens": [
+			"Wheat",
+			"Milk",
+			"Egg"
+		],
+		"category": "bakery",
+		"price": 1.50,
+		"order_limit": 24,
+		"image": "/img/products/muffin.png",
+		"emoji": null
+	},
+	{
+		"id": "pizza-slice",
+		"name": "Pizza Slice",
+		"description": "Cheese and pepperoni slice",
+		"ingredients": [
+			"Pizza Dough",
+			"Tomato Sauce",
+			"Cheese",
+			"Pepperoni"
+		],
+		"allergens": [
+			"Wheat",
+			"Milk"
+		],
+		"category": "mains",
+		"price": 2.50,
+		"order_limit": 16,
+		"image": "/img/products/pizza.png",
+		"emoji": "🍕"
+	},
+	{
+		"id": "pudding",
+		"name": "Pudding",
+		"description": "Caramel pudding dessert",
+		"ingredients": [
+			"Vanilla Pudding",
+			"Caramel Sauce"
+		],
+		"allergens": [
+			"Milk",
+			"Egg"
+		],
+		"category": "desserts",
+		"price": 1.50,
+		"order_limit": 12,
+		"image": "/img/products/pudding.png",
+		"emoji": "🍮"
+	},
+	{
+		"id": "sandwich",
+		"name": "Sandwich",
+		"description": "Ham and cheese sandwich",
+		"ingredients": [
+			"Bread",
+			"Lettuce",
+			"Tomato",
+			"Ham",
+			"Cheese"
+		],
+		"allergens": [
+			"Wheat",
+			"Milk"
+		],
+		"category": "mains",
+		"price": 3.50,
+		"order_limit": 24,
+		"image": "/img/products/sandwich.png",
+		"emoji": "🥪"
+	},
+	{
+		"id": "soda",
+		"name": "Soda",
+		"description": "Cold fizzy soda",
+		"ingredients": [
+			"Carbonated Water",
+			"Cola Flavoring"
+		],
+		"allergens": [],
+		"category": "drinks",
+		"price": 1.50,
+		"order_limit": 24,
+		"image": "/img/products/soda.png",
+		"emoji": null
+	},
+	{
+		"id": "taco",
+		"name": "Taco",
+		"description": "Crispy taco with meat",
+		"ingredients": [
+			"Corn Tortilla",
+			"Beef",
+			"Lettuce",
+			"Tomato",
+			"Onion",
+			"Garlic",
+			"Seasoning"
+		],
+		"allergens": [],
+		"category": "mains",
+		"price": 2.00,
+		"order_limit": 24,
+		"image": "/img/products/taco.png",
+		"emoji": "🌮"
+	},
+	{
+		"id": "tea",
+		"name": "Tea",
+		"description": "Hot tea cup",
+		"ingredients": [
+			"Green Tea"
+		],
+		"allergens": [],
+		"category": "drinks",
+		"price": 1.20,
+		"order_limit": 8,
+		"image": "/img/products/tea.png",
+		"emoji": "🍵"
+	},
+	{
+		"id": "water",
+		"name": "Water",
+		"description": "Fresh bottled water",
+		"ingredients": [
+			"Water"
+		],
+		"allergens": [],
+		"category": "drinks",
+		"price": 1.00,
+		"order_limit": 24,
+		"image": "/img/products/water.png",
+		"emoji": null
+	}
+]

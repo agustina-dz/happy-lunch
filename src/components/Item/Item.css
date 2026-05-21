@@ -1,0 +1,37 @@
+article.item {
+	display: flex;
+	flex-direction: column;
+	width: 214px;
+	max-width: 214px;
+	min-width: 214px;
+	background-color: var(--cream-accent);
+	border-radius: 25px;
+	padding: 1rem;
+}
+
+article.item {
+	box-shadow: inset 0 0 0 0 var(--cream-accent), inset 0 0 0 3px var(--category);
+}
+a article.item:hover {
+	box-shadow: inset 0 0 0 0 var(--cream-accent), inset 0 0 0 4px var(--category);
+}
+
+article.item .title {
+	display: flex;
+	align-items: center;
+	gap: .4rem;
+	margin-bottom: .5rem;
+}
+
+article.item .name,
+article.item .description {
+	margin: 0;
+}
+
+article.item .description {
+	margin-bottom: 1rem;
+}
+
+article.item .pricing {
+	margin: auto 0 0;
+}

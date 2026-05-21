@@ -1,0 +1,14 @@
+.ingredients-list h4 {
+	margin-bottom: 0;
+}
+
+.ingredients-list ul {
+	padding-left: 1rem;
+	margin-top: .5rem;
+}
+
+.ingredients-list ul.columns {
+	column-count: 2;
+	column-gap: 30px;
+	column-width: 150px;
+}

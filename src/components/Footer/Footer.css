@@ -1,0 +1,28 @@
+footer {
+	color: white;
+	background-color: var(--red);
+	padding: 1rem 13vw;
+	margin-top: auto;
+}
+
+footer p.list-title {
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+footer ul {
+	list-style-type: square;
+	padding-left: 1rem;
+	margin-top: 0;
+}
+
+footer p:not(.text-bold,.list-title) {
+	margin: 0;
+}
+
+footer a {
+	color: white;
+	text-underline-offset: 2px;
+}
+footer a:hover {
+	text-decoration-thickness: 2px;
+}

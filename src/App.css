@@ -1,0 +1,85 @@
+:root {
+  --light: #E2E2E2;
+  --dark: #3F3B3C;
+
+  --cream: #F1DEB2;
+  --cream-accent: #F6E7C5;
+
+  --mustard: #DDBE7A;
+  --terracota: #D96C3D;
+
+  --red: #D2554D;
+  --orange: #FF9D6F;
+  --green: #6DB850;
+  --blue: #7E99BC;
+}
+
+html, body {
+  background-color: var(--mustard);
+}
+body {
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: scroll;
+  scrollbar-color: var(--red) var(--cream);
+  scrollbar-width: thin;
+}
+
+main {
+  background-color: var(--cream);
+  margin: 0 12vw 50px;
+  padding: 30px 30px 50px;
+  border-radius: 0 0 50px 50px;
+}
+
+.tab-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.mains {
+	--category: var(--terracota);
+}
+.drinks {
+	--category: var(--blue);
+}
+.bakery {
+	--category: var(--green);
+}
+.desserts {
+	--category: var(--orange);
+}
+
+button.action-button,
+a.action-button {
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+
+  color: white;
+  background-color: var(--category);
+
+  border: none;
+  border-radius: 2rem;
+
+  cursor: pointer;
+  padding: .5rem;
+  margin-top: 1rem;
+}
+button.action-button:hover,
+a.action-button:hover {
+  text-decoration: none;
+  background-color: var(--red);
+}
+button.action-button[disabled],
+a.action-button[disabled] {
+  color: white;
+  background-color: var(--mustard);
+  cursor: default;
+}

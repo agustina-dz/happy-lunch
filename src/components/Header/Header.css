@@ -1,0 +1,36 @@
+header .logo-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	min-height: 175px;
+	padding: 0 10vw;
+}
+
+header .logo-container,
+header .logo-container * {
+	color: white;
+	text-decoration: none;
+}
+
+header .logo-container h1 {
+	display: flex;
+	align-items: center;
+	height: 50px;
+	background-color: var(--red);
+
+	padding: 0 3rem 0 175px;
+	margin: 0;
+
+	border-radius: 1em;
+}
+
+header .logo-container img {
+	position: absolute;
+	bottom: 25px;
+	margin-left: 1.5rem;
+	filter:	drop-shadow(2px 0 0 var(--light))
+			drop-shadow(-2px 0 0 var(--light))
+			drop-shadow(0 2px 0 var(--light))
+			drop-shadow(0 -2px 0 var(--light));
+}

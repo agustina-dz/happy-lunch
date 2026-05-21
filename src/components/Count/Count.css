@@ -1,0 +1,43 @@
+.counter-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+.counter-container button.counter {
+	width: 30%;
+}
+
+.counter-container .counter-number {
+  text-align: center;
+	margin: 0;
+  width: 1rem;
+}
+
+.item-detail .counter-container {
+	margin-top: 1rem;
+}
+.item-detail button.counter {
+  font-size: .8rem;
+  text-align: center;
+  text-decoration: none;
+
+  color: white;
+  background-color: var(--category);
+
+  border: none;
+  border-radius: 2rem;
+
+  cursor: pointer;
+  padding: .3rem 1rem;
+}
+.item-detail button.counter:hover {
+  text-decoration: none;
+  background-color: var(--red);
+}
+.item-detail button.counter[disabled] {
+  color: white;
+  background-color: var(--mustard);
+  cursor: default;
+}

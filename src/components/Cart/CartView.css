@@ -1,0 +1,136 @@
+.cart table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cart caption {
+	font-size: 1.5rem;
+	padding-bottom: 1rem;
+}
+
+.cart thead th {
+	padding: 1rem;
+	border-top: 3px dotted black;
+}
+.cart thead th.text-start {
+	text-align: start;
+}
+
+.cart tbody tr:last-child td {
+	padding-bottom: 1rem;
+	border-bottom: 3px dotted black;
+}
+
+.cart tfoot {
+	font-size: 1.25rem;
+}
+.cart tfoot td {
+	padding: 1rem 1rem 0;
+}
+.cart tfoot td.text-bold {
+	text-align: end;
+}
+.cart tfoot td.text-numerical {
+	font-size: 2rem;
+}
+
+.cart col.col-name {
+	width: 20ch;
+}
+.cart col.col-subtotal {
+	width: 10ch;
+}
+
+.cart td {
+	vertical-align: middle;
+	border: none;
+}
+.cart td:not(:first-child,:nth-child(2) :last-child) {
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.cart button:hover {
+	cursor: pointer;
+}
+
+.cart .counter-container {
+	width: 11ch;
+}
+.cart button.counter {
+	font-size: 1.25rem;
+	background-color: transparent;
+	border: none;
+	width: 2rem;
+}
+.cart button.counter:hover {
+	font-weight: 700;
+}
+
+.cart button.remove {
+	color: var(--red);
+	font-size: 1.25rem;
+	background-color: transparent;
+	border: none;
+	padding: 0 .25rem;
+	width: 1.5rem;
+}
+.cart button.remove:hover {
+	font-weight: 700;
+}
+
+.cart button.checkout {
+	font-size: 1rem;
+	color: white;
+	background-color: var(--green);
+	border: 2px solid var(--green);
+	border-radius: 2rem;
+	width: 275px;
+	padding: .25rem;
+	margin-left: auto;
+}
+.cart button.checkout:hover::before {
+	content: "<< ";
+}
+.cart button.checkout:hover::after {
+	content: " >>";
+}
+
+.cart a {
+	color: black;
+	text-decoration: none;
+}
+.cart a:hover {
+	text-decoration: underline;
+	text-underline-offset: .25rem;
+	text-decoration-thickness: 2px;
+}
+
+.cart .flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.cart-empty {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.cart-empty p {
+	margin-bottom: 0;
+}
+
+.cart-empty .home-link a {
+	color: black;
+	text-decoration: none;
+}
+.cart-empty .home-link a:hover {
+	text-decoration: underline;
+	text-underline-offset: .25rem;
+	text-decoration-thickness: 2px;
+}
+.cart-empty .home-link::before {
+	content: "< ";
+}
