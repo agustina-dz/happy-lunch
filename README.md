@@ -1,16 +1,44 @@
-# React + Vite
+# Happy Lunch !
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pixel-art food-ordering app built with React.
 
-Currently, two official plugins are available:
+[![Live Demo](https://img.shields.io/badge/🍌_Live_Demo_>>-D2554D?style=for-the-badge)](https://agustinadz-happy-lunch.vercel.app/)\
+![Happy Lunch ! site screenshot](screenshots/screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+￭ Product categories: Mains, Drinks, Bakery, Desserts\
+￭ Product detail pages\
+￭ Shopping cart\
+￭ Loading, error, and empty-cart screens
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚠️ Desktop only interface
 
-## Expanding the ESLint configuration
+## Run locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# clone the repository
+git clone https://github.com/agustina-dz/happy-lunch.git
+cd happy-lunch
+
+# install dependencies
+npm install
+
+# start the development server
+npm run dev
+```
+-----
+<br />
+
+Built by **Agustina Díaz** for the [Talento Tech](https://talentotech.bue.edu.ar/home) ReactJS course.
+
+**Assets:**\
+￭ [Monkey and Banana stickers](https://www.flaticon.com/authors/monkey_and_banana/lineal-color) – Flaticon (some modified)\
+￭ [Pixel Mart](https://ghostpixxells.itch.io/pixel-mart) – ghostpixxells (itch.io)\
+￭ [250 Free Pixel Art Concumables Icons](https://pixstuff.itch.io/250-free-pixel-art-concumables-icons) – pixStuff (itch.io)
+
+-----
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+[![React](https://img.shields.io/badge/React-72CEE2?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-BFAAFF?style=for-the-badge&logo=vite&logoColor=black)](https://vite.dev/)
+[![React Router](https://img.shields.io/badge/React_Router-F44250?style=for-the-badge&logo=reactrouter&logoColor=white)](https://reactrouter.com/)
