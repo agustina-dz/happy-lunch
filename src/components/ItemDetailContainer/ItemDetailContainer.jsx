@@ -19,6 +19,7 @@ export const ItemDetailContainer = () => {
 					setItemDetail( item );
 					return;
 				};
+				// diferenciar entre error de fetch y producto no encontrado
 				throw new Error( "Item not found", { cause: "missingProduct" } );
 			})
 			.catch( fetchError => {
@@ -31,14 +32,8 @@ export const ItemDetailContainer = () => {
 
 	if ( loading ) return <ScreenMessage type="loading" />;
 
-// ----- mensajes de error ----- //
-
-	// error al cargar el JSON
 	if ( error ) return <ScreenMessage type="error" />;
-
-	// producto no encontrado
 	if ( !itemDetail ) return <ScreenMessage type="error" message="Oops! That item isn't on the menu." />;
-
 
 	return (
 		<ItemDetail item={ itemDetail } />

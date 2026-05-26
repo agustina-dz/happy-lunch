@@ -3,7 +3,6 @@ import { useCart } from "../../context/CartContext";
 import { NavItem } from "./NavItem";
 import "./Nav.css";
 
-// items de navegación con labels, rutas e imágenes
 export const NAV_ITEMS = [
 	{ label: "All Products",		path: "/",				image: "/img/assets/nav/banana.png" },
 	{ label: "Mains",				path: "/mains",			image: null },

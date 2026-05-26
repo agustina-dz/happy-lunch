@@ -9,7 +9,6 @@ export const CartItem = ({ item }) => {
 
 	return (
 		<tr>
-			{ /* imagen + nombre del producto */ }
 			<td>
 				<div className="flex-container">
 					<img src={ item.image } alt="" />
@@ -19,7 +18,6 @@ export const CartItem = ({ item }) => {
 				</div>
 			</td>
 
-			{ /* reutilizar contador para modificar quantity */ }
 			<td className="text-numerical">
 				<Count
 					onIncrement={ () => addItem( item ) }
@@ -28,17 +26,14 @@ export const CartItem = ({ item }) => {
 				/>
 			</td>
 
-			{ /* precio individual del producto */ }
 			<td className="text-numerical">
 				{ formatPrice( item.price ) }
 			</td>
 
-			{ /* precio total del producto (quantity) */ }
 			<td className="text-numerical">
 				{ formatPrice( item.price * item.quantity ) }
 			</td>
 
-			{ /* botón: eliminar producto del carrito */ }
 			<td>
 				<div className="flex-container">
 					<button className="remove" onClick={ () => deleteItem( item ) } >X</button>

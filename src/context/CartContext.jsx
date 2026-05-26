@@ -22,19 +22,14 @@ export const CartProvider = ({ children }) => {
 	const [ cart, setCart ] = useState([]);
 
 
-// ----- ----- ----- obtener item quantity ----- ----- ----- //
+	// ----- obtener item quantity ----- //
 	const getItemQuantity = ( id ) => {
-
-		// si el item no está presente en el carrito, return quantity -> 0
 		const itemQuantity = cart.find( element => element.id === id )?.quantity ?? 0;
-
 		return itemQuantity;
 	};
 
-// ----- ----- ----- actualizar item quantity ----- ----- ----- //
+	// ----- actualizar item quantity ----- //
 	const updateItemQuantity = ( item, updatedQuantity ) => {
-
-		// obtener item quantity
 		const itemQuantity = getItemQuantity( item.id );
 
 		// agregar item al carrito si el nuevo quantity es >= 1 y el item no existe en el carrito
@@ -56,13 +51,10 @@ export const CartProvider = ({ children }) => {
 		setCart( updatedCart );
 	};
 
-// ----- ----- ----- agregar item al carrito (quantity) ----- ----- ----- //
+	// ----- agregar item al carrito (quantity) ----- //
 	const addItem = ( item, quantity = 1 ) => {
-
-		// impedir acción si quantity es 0 (early return)
 		if ( quantity === 0 ) return;
 
-		// obtener item quantity y new quantity
 		const itemQuantity = getItemQuantity( item.id );
 		const newQuantity = itemQuantity + quantity;
 
@@ -72,62 +64,49 @@ export const CartProvider = ({ children }) => {
 			return;
 		};
 
-		// actualizar item quantity en el carrito
 		updateItemQuantity( item, newQuantity );
 
-		// informar al usuario (alert)
 		const message = `${ item.name }${ newQuantity > 1 ? "(s)" : "" } added to your cart.`+
 			`${ ( newQuantity > 1 ) ? `\n\n${ item.emoji ?? "🛒" } ${ item.name }(s) in cart: ${ newQuantity }` : "" }`;
 		alert( message );
 	};
 
-// ----- ----- ----- eliminar item del carrito (quantity) ----- ----- ----- //
+	// ----- eliminar item del carrito (quantity) ----- //
 	const removeItem = ( item, quantity = 1 ) => {
-
-		// impedir acción si quantity es 0 (early return)
 		if ( quantity === 0 ) return;
 
-		// obtener item quantity y new quantity
 		const itemQuantity = getItemQuantity( item.id );
 		const newQuantity = itemQuantity - quantity;
 
-		// impedir acción si item no se encuentra en el carrito (early return)
 		if ( itemQuantity === 0 ) return;
 
-		// actualizar item quantity en el carrito
 		updateItemQuantity( item, newQuantity );
 
-		// informar al usuario (alert)
 		const message = `${ item.name } removed from your cart.`+
 			`${ ( newQuantity >= 1 ) ? `\n\n${ item.emoji ?? "🛒" } ${ item.name }(s) in cart: ${ newQuantity }` : "" }`;
 		alert( message );
 	};
 
-// ----- ----- ----- eliminar item del carrito ----- ----- ----- //
+	// ----- eliminar item del carrito ----- //
 	const deleteItem = ( item ) => {
-
-		// impedir acción si item no se encuentra en el carrito (early return)
 		const itemQuantity = getItemQuantity( item.id );
 		if ( itemQuantity === 0 ) return;
 
-		// eliminar item del carrito
 		updateItemQuantity( item, 0 );
 
-		// informar al usuario (alert)
 		const message = `${ item.name }${ itemQuantity > 1 ? "(s)" : "" } removed from your cart.`;
 		alert( message );
 	};
 
-// ----- ----- ----- obtener número total de items en el carrito (quantity) ----- ----- ----- //
+	// ----- obtener número total de items en el carrito (quantity) ----- //
 	const getTotalItems = () => {
 		return cart.reduce( ( acc, element ) => acc + element.quantity, 0 );
 	};
 
-// ----- ----- ----- obtener número total de items en el carrito (quantity) ----- ----- ----- //
+	// ----- obtener valor total de items en el carrito (quantity) ----- //
 	const getCartTotal = () => {
 		return cart.reduce( ( acc, element ) => acc + element.price * element.quantity, 0 );
 	};
-
 
 	const clearCart = () => {
 		setCart([]);

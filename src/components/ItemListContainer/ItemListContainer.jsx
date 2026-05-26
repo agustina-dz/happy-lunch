@@ -36,18 +36,12 @@ export const ItemListContainer = () => {
 
 	if ( loading ) return <ScreenMessage type="loading" />;
 
-// ----- mensajes de error ----- //
-
-	// error al cargar el JSON
 	if ( error ) return <ScreenMessage type="error" />;
 
-	// categoría inválida
 	const isUnknownCategory = category && !products.some( p => p.category === category );
 	if ( isUnknownCategory ) return <ScreenMessage type="error" message="Oops! That's not part of our menu." />;
 
-	// no se encuentran productos
 	if ( !filteredProducts.length ) return <ScreenMessage type="error" message="Oops! Nothing on the menu here." />;
-
 
 	return (
 		<>
