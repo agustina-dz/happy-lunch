@@ -58,7 +58,8 @@
 			"Bell Peppers"
 		],
 		"allergens": [
-			"Wheat"
+			"Wheat",
+			"Milk"
 		],
 		"category": "mains",
 		"price": 4.50,
