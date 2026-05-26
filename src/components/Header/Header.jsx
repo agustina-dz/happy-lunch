@@ -17,5 +17,5 @@ export const Header = () => {
 			</div>
 			<Nav />
 		</header>
-	)
+	);
 };

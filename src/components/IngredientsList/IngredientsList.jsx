@@ -8,7 +8,9 @@ export const IngredientsList = ({ title, list }) => {
 			{ /* si la lista tiene más de 4 items, usar columnas */ }
 			<ul className={ list.length > 4 ? "columns" : "" }>
 
-				{ list.map( item => <li key={ item }>{ item }</li> ) }
+				{ list.map( item => (
+					<li key={ item }>{ item }</li>
+				) ) }
 
 			</ul>
 		</div>

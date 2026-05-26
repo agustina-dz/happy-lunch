@@ -11,7 +11,7 @@ function App() {
 
 	// cargar imagen de "loading" en el caché para evitar mensaje "loading" sin imagen
 	useEffect( () => {
-    	new Image().src = "/img/assets/screen/loading.png";
+		new Image().src = "/img/assets/screen/loading.png";
 	}, [] );
 
 	return (
