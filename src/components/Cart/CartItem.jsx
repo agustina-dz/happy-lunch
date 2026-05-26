@@ -5,7 +5,7 @@ import { formatPrice } from "../../utils/formatPrice";
 
 export const CartItem = ({ item }) => {
 
-	const { deleteItem } = useCart();
+	const { addItem, removeItem, deleteItem } = useCart();
 
 	return (
 		<tr>
@@ -19,9 +19,13 @@ export const CartItem = ({ item }) => {
 				</div>
 			</td>
 
-			{ /* reutilizar contador para mostrar/modificar quantity */ }
+			{ /* reutilizar contador para modificar quantity */ }
 			<td className="text-numerical">
-				<Count item={ item } />
+				<Count
+					onIncrement={ () => addItem( item ) }
+					onDecrement={ () => removeItem( item ) }
+					value={ item.quantity }
+				/>
 			</td>
 
 			{ /* precio individual del producto */ }

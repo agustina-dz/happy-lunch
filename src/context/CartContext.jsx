@@ -37,9 +37,9 @@ export const CartProvider = ({ children }) => {
 		// obtener item quantity
 		const itemQuantity = getItemQuantity( item.id );
 
-		// agregar item al carrito si el nuevo quantity es 1 y el item no existe en el carrito
-		if ( itemQuantity === 0 && updatedQuantity === 1 ) {
-			setCart([ ...cart, { ...item, quantity: 1 } ]);
+		// agregar item al carrito si el nuevo quantity es >= 1 y el item no existe en el carrito
+		if ( itemQuantity === 0 && updatedQuantity >= 1 ) {
+			setCart([ ...cart, { ...item, quantity: updatedQuantity } ]);
 			return;
 		};
 
@@ -57,15 +57,18 @@ export const CartProvider = ({ children }) => {
 	};
 
 // ----- ----- ----- agregar item al carrito (quantity) ----- ----- ----- //
-	const addItem = ( item ) => {
+	const addItem = ( item, quantity = 1 ) => {
+
+		// impedir acción si quantity es 0 (early return)
+		if ( quantity === 0 ) return;
 
 		// obtener item quantity y new quantity
 		const itemQuantity = getItemQuantity( item.id );
-		const newQuantity = itemQuantity + 1;
+		const newQuantity = itemQuantity + quantity;
 
 		// impedir acción si new quantity supera el límite de compra (early return)
 		if ( newQuantity > item.order_limit ) {
-			alert(`Cannot add any more ${ item.name } to your cart.`);
+			alert(`You can only add up to ${ item.order_limit } ${ item.name }(s) to your cart.`);
 			return;
 		};
 
@@ -73,17 +76,20 @@ export const CartProvider = ({ children }) => {
 		updateItemQuantity( item, newQuantity );
 
 		// informar al usuario (alert)
-		const message =  `${ item.name } added to your cart.`+
+		const message = `${ item.name }${ newQuantity > 1 ? "(s)" : "" } added to your cart.`+
 			`${ ( newQuantity > 1 ) ? `\n\n${ item.emoji ?? "🛒" } ${ item.name }(s) in cart: ${ newQuantity }` : "" }`;
 		alert( message );
 	};
 
 // ----- ----- ----- eliminar item del carrito (quantity) ----- ----- ----- //
-	const removeItem = ( item ) => {
+	const removeItem = ( item, quantity = 1 ) => {
+
+		// impedir acción si quantity es 0 (early return)
+		if ( quantity === 0 ) return;
 
 		// obtener item quantity y new quantity
 		const itemQuantity = getItemQuantity( item.id );
-		const newQuantity = itemQuantity - 1;
+		const newQuantity = itemQuantity - quantity;
 
 		// impedir acción si item no se encuentra en el carrito (early return)
 		if ( itemQuantity === 0 ) return;
@@ -92,7 +98,7 @@ export const CartProvider = ({ children }) => {
 		updateItemQuantity( item, newQuantity );
 
 		// informar al usuario (alert)
-		const message =  `${ item.name } removed from your cart.`+
+		const message = `${ item.name } removed from your cart.`+
 			`${ ( newQuantity >= 1 ) ? `\n\n${ item.emoji ?? "🛒" } ${ item.name }(s) in cart: ${ newQuantity }` : "" }`;
 		alert( message );
 	};
@@ -108,7 +114,7 @@ export const CartProvider = ({ children }) => {
 		updateItemQuantity( item, 0 );
 
 		// informar al usuario (alert)
-		const message =  `${ item.name }${ itemQuantity > 1 ? "(s)" : "" } removed from your cart.`;
+		const message = `${ item.name }${ itemQuantity > 1 ? "(s)" : "" } removed from your cart.`;
 		alert( message );
 	};
 
@@ -136,7 +142,6 @@ export const CartProvider = ({ children }) => {
 	return (
 		<CartContext.Provider value={{
 			cart,
-			getItemQuantity,
 			addItem,
 			removeItem,
 			deleteItem,
