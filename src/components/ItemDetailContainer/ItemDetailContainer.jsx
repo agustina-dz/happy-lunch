@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { getProductById } from "../../services/productsService";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { ScreenMessage } from "../ScreenMessage/ScreenMessage";
 
@@ -8,31 +9,18 @@ export const ItemDetailContainer = () => {
 
 	const [ itemDetail, setItemDetail ] = useState( null );
 	const [ loading, setLoading ] = useState( true );
-	const [ error, setError ] = useState( false );
 
 	useEffect( () => {
-		fetch( "/data/products.json")
-			.then( response => response.json() )
-			.then( data => {
-				const item = data.find( product => product.id === id );
-				if ( item ) {
-					setItemDetail( item );
-					return;
-				};
-				// diferenciar entre error de fetch y producto no encontrado
-				throw new Error( "Item not found", { cause: "missingProduct" } );
-			})
-			.catch( fetchError => {
-				console.log( fetchError );
-				if ( fetchError.cause === "missingProduct" ) return;
-				setError( true );
-			} )
-			.finally( () => setLoading( false ) )
-	}, [] );
+		setLoading( true );
+
+		getProductById( id )
+			.then( ( data ) => setItemDetail( data ))
+			.catch( ( fetchError ) => console.log( fetchError ) )
+			.finally( () => setLoading( false ) );
+
+	}, [ id ] );
 
 	if ( loading ) return <ScreenMessage type="loading" />;
-
-	if ( error ) return <ScreenMessage type="error" />;
 	if ( !itemDetail ) return <ScreenMessage type="error" message="Oops! That item isn't on the menu." />;
 
 	return (
