@@ -12,6 +12,7 @@ export const Footer = () => {
 					<li><a href="https://www.flaticon.com/authors/monkey_and_banana/lineal-color" target="_blank" title="Monkey and Banana Stickers">Monkey and Banana stickers created by Stickers - Flaticon</a>. Some images were modified.</li>
 					<li><a href="https://ghostpixxells.itch.io/pixel-mart" target="_blank" title="Pixel Mart">Pixel Mart created by ghostpixxells - itch.io</a></li>
 					<li><a href="https://pixstuff.itch.io/250-free-pixel-art-concumables-icons" target="_blank" title="250 Free Pixel Art Concumables Icons">250 Free Pixel Art Concumables Icons created by pixStuff - itch.io</a></li>
+					<li><a href="https://crusenho.itch.io/icons-essential-pack-free-icons" target="_blank" title="Icons Essential Pack [80 FREE ICONS]">Icons Essential Pack [80 FREE ICONS] by Crusenho - itch.io</a></li>
 				</ul>
 			</small>
 		</footer>

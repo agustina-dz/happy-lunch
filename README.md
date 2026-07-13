@@ -68,7 +68,8 @@ Built by **Agustina Díaz** for the [Talento Tech](https://talentotech.bue.edu.a
 **Assets:**\
 ￭ [Monkey and Banana stickers](https://www.flaticon.com/authors/monkey_and_banana/lineal-color) – Flaticon (some modified)\
 ￭ [Pixel Mart](https://ghostpixxells.itch.io/pixel-mart) – ghostpixxells (itch.io)\
-￭ [250 Free Pixel Art Concumables Icons](https://pixstuff.itch.io/250-free-pixel-art-concumables-icons) – pixStuff (itch.io)
+￭ [250 Free Pixel Art Concumables Icons](https://pixstuff.itch.io/250-free-pixel-art-concumables-icons) – pixStuff (itch.io)\
+￭ [Icons Essential Pack [80 FREE ICONS]](https://crusenho.itch.io/icons-essential-pack-free-icons) – Crusenho (itch.io)
 
 -----
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
