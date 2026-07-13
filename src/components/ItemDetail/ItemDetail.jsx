@@ -6,9 +6,9 @@ import { Count } from "../Count/Count";
 import { useCart } from "../../context/CartContext";
 import "./ItemDetail.css";
 
-export const ItemDetail = ({ item }) => {
+export const ItemDetail = ({ item, preview = false }) => {
 
-	const { addItem } = useCart();
+	const { addItem, clearCart } = useCart();
 
 	// manejar quantity localmente ( agregar varias unidades del mismo producto al carrito )
 	const [ quantity, setQuantity ] = useState( 1 );
@@ -16,6 +16,7 @@ export const ItemDetail = ({ item }) => {
 	const addToCart = () => {
 		addItem( item, quantity );
 		setQuantity( 1 );
+		if ( preview ) { clearCart() };
 	};
 
 	return (

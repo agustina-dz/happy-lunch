@@ -67,7 +67,7 @@ export const CartProvider = ({ children }) => {
 		updateItemQuantity( item, newQuantity );
 
 		const message = `${ item.name }${ newQuantity > 1 ? "(s)" : "" } added to your cart.`+
-			`${ ( newQuantity > 1 ) ? `\n\n${ item.emoji ?? "🛒" } ${ item.name }(s) in cart: ${ newQuantity }` : "" }`;
+			`${ ( newQuantity > 1 ) ? `\n\n${ item.emoji === "" ? "🛒" : item.emoji } ${ item.name }(s) in cart: ${ newQuantity }` : "" }`;
 		alert( message );
 	};
 
@@ -83,7 +83,7 @@ export const CartProvider = ({ children }) => {
 		updateItemQuantity( item, newQuantity );
 
 		const message = `${ item.name } removed from your cart.`+
-			`${ ( newQuantity >= 1 ) ? `\n\n${ item.emoji ?? "🛒" } ${ item.name }(s) in cart: ${ newQuantity }` : "" }`;
+			`${ ( newQuantity >= 1 ) ? `\n\n${ item.emoji === "" ? "🛒" : item.emoji } ${ item.name }(s) in cart: ${ newQuantity }` : "" }`;
 		alert( message );
 	};
 

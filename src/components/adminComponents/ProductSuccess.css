@@ -1,0 +1,9 @@
+.form-success {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.success-actions {
+	display: flex;
+	gap: 10px;
+}

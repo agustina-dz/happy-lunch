@@ -2,17 +2,16 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
-// Firebase App configuration
+// reference .env.example/.env.local
 const firebaseConfig = {
-	apiKey: "AIzaSyBlgbd-OAAC_LjfT-ruPAd1HNl_gkB53Ww",
-	authDomain: "agustinadz-happy-lunch.firebaseapp.com",
-	projectId: "agustinadz-happy-lunch",
-	storageBucket: "agustinadz-happy-lunch.firebasestorage.app",
-	messagingSenderId: "890526516359",
-	appId: "1:890526516359:web:74b82f5d3ffb87504ea422"
+	apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+	authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+	projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+	storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+	appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
-// Initialize Firebase
 const app = initializeApp( firebaseConfig );
 
 const db = getFirestore( app );

@@ -1,0 +1,143 @@
+.form-container {
+	display: flex;
+	gap: 60px;
+}
+.form-container .product-preview .item-detail {
+	margin-bottom: auto;
+}
+
+.form-container small {
+	text-align: end;
+}
+
+.product-form {
+	width: 500px;
+}
+
+.product-form label {
+	margin-bottom: 5px;
+}
+.product-form label.required::after {
+	content: "*";
+	color: var(--red);
+	font-size: .5rem;
+	vertical-align: super;
+}
+
+.product-form input,
+.product-form select {
+	font-family: inherit;
+}
+.product-form input,
+.product-form textarea,
+.product-form select {
+	border: none;
+	padding: 5px 15px;
+}
+.product-form input[type="file"] {
+	padding: 0;
+	border-radius: 0;
+}
+.product-form input[type="number"] {	
+	font-family: "Micro 5", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5rem;
+}
+
+.form-button {
+	color: white;
+	background-color: var(--red);
+
+	font-family: "Silkscreen", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+	border: none;
+	border-radius: 15px;
+	padding: 5px 15px;
+}
+.form-button:hover::before {
+	content: "<< ";
+}
+.form-button:hover::after {
+	content: " >>";
+}
+
+.form-button {
+	width: 100%;
+	margin-top: 15px;
+}
+
+.product-form .form-section {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.product-form .form-section {
+	margin-bottom: 15px;
+}
+
+.product-form .form-input * {
+	display: block;
+}
+.product-form .form-input:only-child input,
+.product-form .form-input:only-child textarea {
+	width: 470px;
+}
+.product-form .form-input:not(:only-child) input,
+.product-form .form-input:not(:only-child) textarea {
+	width: 220px;
+}
+.product-form .form-input input[name="name"] {
+	width: 207px;
+}
+.product-form .form-input input[name="price"] {
+	width: 190px;
+}
+.product-form .form-input select[name="category"] {
+	width: 500px;
+}
+
+.product-form .form-error {
+	color: var(--red);
+	margin-top: 5px;
+	margin-bottom: 0;
+	width: 100%;
+}
+.product-form .form-error::before {
+	content: "⚠ ";
+}
+
+.product-form .pricing-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 5px;
+}
+
+.product-suggestions {
+	border-top: 2px dashed var(--dark);
+	border-bottom: 2px dashed var(--dark);
+	
+	margin-bottom: 30px;
+	padding-bottom: 18px;
+}
+.product-suggestions h3 {
+	margin-bottom: 0;
+}
+.product-suggestions small.hint {
+	display: block;
+	text-align: start;
+	margin-bottom: 18px;
+}
+.product-suggestions .suggestions-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.product-suggestions .suggestion {
+	display: flex;
+	align-items: center;
+}

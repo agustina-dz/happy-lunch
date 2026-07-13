@@ -16,7 +16,7 @@
 		"category": "bakery",
 		"price": 1.50,
 		"order_limit": 12,
-		"image": "/img/products/bagel.png",
+		"image": "https://i.ibb.co/6cCTv877/bagel.png",
 		"emoji": "🥯"
 	},
 	{
@@ -39,7 +39,7 @@
 		"category": "mains",
 		"price": 4.50,
 		"order_limit": 12,
-		"image": "/img/products/burger.png",
+		"image": "https://i.ibb.co/dsLh13vT/burger.png",
 		"emoji": "🍔"
 	},
 	{
@@ -64,7 +64,7 @@
 		"category": "mains",
 		"price": 4.50,
 		"order_limit": 12,
-		"image": "/img/products/burrito.png",
+		"image": "https://i.ibb.co/Vpqkj201/burrito.png",
 		"emoji": "🌯"
 	},
 	{
@@ -84,7 +84,7 @@
 		"category": "bakery",
 		"price": 2.50,
 		"order_limit": 12,
-		"image": "/img/products/cake.png",
+		"image": "https://i.ibb.co/1G09K1F9/cake.png",
 		"emoji": "🍰"
 	},
 	{
@@ -98,7 +98,7 @@
 		"category": "drinks",
 		"price": 1.50,
 		"order_limit": 8,
-		"image": "/img/products/coffee.png",
+		"image": "https://i.ibb.co/TDp8GfyP/coffee.png",
 		"emoji": "☕"
 	},
 	{
@@ -117,7 +117,7 @@
 		"category": "bakery",
 		"price": 1.00,
 		"order_limit": 24,
-		"image": "/img/products/cookie.png",
+		"image": "https://i.ibb.co/93ckZVp3/cookie.png",
 		"emoji": "🍪"
 	},
 	{
@@ -138,7 +138,7 @@
 		"category": "bakery",
 		"price": 1.50,
 		"order_limit": 12,
-		"image": "/img/products/donut.png",
+		"image": "https://i.ibb.co/wNrmSwvm/donut.png",
 		"emoji": "🍩"
 	},
 	{
@@ -154,7 +154,7 @@
 		"category": "desserts",
 		"price": 1.50,
 		"order_limit": 12,
-		"image": "/img/products/icecream.png",
+		"image": "https://i.ibb.co/HM175fX/icecream.png",
 		"emoji": "🍦"
 	},
 	{
@@ -169,8 +169,8 @@
 		"category": "desserts",
 		"price": 1.50,
 		"order_limit": 12,
-		"image": "/img/products/jelly.png",
-		"emoji": null
+		"image": "https://i.ibb.co/9k8Y3wzB/jelly.png",
+		"emoji": ""
 	},
 	{
 		"id": "juice",
@@ -183,7 +183,7 @@
 		"category": "drinks",
 		"price": 1.80,
 		"order_limit": 24,
-		"image": "/img/products/juice.png",
+		"image": "https://i.ibb.co/JFmcLmWy/juice.png",
 		"emoji": "🧃"
 	},
 	{
@@ -202,8 +202,8 @@
 		"category": "bakery",
 		"price": 1.50,
 		"order_limit": 24,
-		"image": "/img/products/muffin.png",
-		"emoji": null
+		"image": "https://i.ibb.co/PvW67gJ2/muffin.png",
+		"emoji": ""
 	},
 	{
 		"id": "pizza-slice",
@@ -222,7 +222,7 @@
 		"category": "mains",
 		"price": 2.50,
 		"order_limit": 16,
-		"image": "/img/products/pizza.png",
+		"image": "https://i.ibb.co/FL6S8Ldw/pizza.png",
 		"emoji": "🍕"
 	},
 	{
@@ -240,7 +240,7 @@
 		"category": "desserts",
 		"price": 1.50,
 		"order_limit": 12,
-		"image": "/img/products/pudding.png",
+		"image": "https://i.ibb.co/yn8jVZnD/pudding.png",
 		"emoji": "🍮"
 	},
 	{
@@ -261,7 +261,7 @@
 		"category": "mains",
 		"price": 3.50,
 		"order_limit": 24,
-		"image": "/img/products/sandwich.png",
+		"image": "https://i.ibb.co/RkGtHk2s/sandwich.png",
 		"emoji": "🥪"
 	},
 	{
@@ -276,8 +276,8 @@
 		"category": "drinks",
 		"price": 1.50,
 		"order_limit": 24,
-		"image": "/img/products/soda.png",
-		"emoji": null
+		"image": "https://i.ibb.co/SXkP7vcM/soda.png",
+		"emoji": ""
 	},
 	{
 		"id": "taco",
@@ -296,7 +296,7 @@
 		"category": "mains",
 		"price": 2.00,
 		"order_limit": 24,
-		"image": "/img/products/taco.png",
+		"image": "https://i.ibb.co/xKtC3WdP/taco.png",
 		"emoji": "🌮"
 	},
 	{
@@ -310,7 +310,7 @@
 		"category": "drinks",
 		"price": 1.20,
 		"order_limit": 8,
-		"image": "/img/products/tea.png",
+		"image": "https://i.ibb.co/BHdLq2yw/tea.png",
 		"emoji": "🍵"
 	},
 	{
@@ -324,7 +324,7 @@
 		"category": "drinks",
 		"price": 1.00,
 		"order_limit": 24,
-		"image": "/img/products/water.png",
-		"emoji": null
+		"image": "https://i.ibb.co/N2CXg1xD/water.png",
+		"emoji": ""
 	}
 ]

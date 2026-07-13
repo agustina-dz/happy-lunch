@@ -1,0 +1,65 @@
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.dashboard-actions {
+    margin-bottom: 30px;
+}
+
+.dashboard-actions .action-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+
+	color: white;
+	background-color: var(--red);
+
+	border-radius: 15px;
+	padding: 5px 15px;
+}
+.dashboard-actions .action-button:hover {
+    text-decoration: underline;
+    text-underline-offset: .25rem;
+    text-decoration-thickness: 2px;
+}
+
+.products-table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.products-table th,
+.products-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px dashed var(--dark);
+    vertical-align: middle;
+}
+
+.products-table th {
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.products-table td img {
+    display: block;
+}
+
+.dashboard-actions,
+button.dashboard-button {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.dashboard a {
+    text-decoration: none;
+}
+.dashboard a:hover {
+    text-decoration: underline;
+    text-underline-offset: .25rem;
+    text-decoration-thickness: 2px;
+}

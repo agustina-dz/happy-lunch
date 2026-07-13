@@ -1,8 +1,9 @@
 import {
 	collection,
-	addDoc,
+	setDoc, // actualizar o crear un documento con ID específico
 	getDoc,
 	getDocs,
+	deleteDoc,
 	doc,
 	query,
 	where
@@ -22,7 +23,7 @@ export const getByCategory = async ( category ) => {
 		const snapshot = await getDocs( queryRef );
 
 		const productsFormat = snapshot.docs.map( ( doc ) => {
-			return { id: doc.id, ...doc.data() };
+			return { ...doc.data(), id: doc.id };
 		} );
 
 		return productsFormat;
@@ -52,6 +53,63 @@ export const getProductById = async ( id ) => {
 		return null;
 	};
 };
+
+// ----- alta de producto con ID personalizado ----- //
+export const createProduct = async ( productData ) => {
+	try {
+		// separar el id del resto de los datos
+		const { id, ...data } = productData;
+
+		// impedir acción si ya existe un producto con el mismo ID (evita sobreescribir un producto existente)
+		const productRef = doc( db, "products", id );
+		const existingDoc = await getDoc( productRef );
+
+		if ( existingDoc.exists() ) {
+			throw new Error( `Product with ID "${ id }" already exists.` );
+		};
+		// ----- ----- ----- ----- -----
+
+		await setDoc( productRef, data );
+		return id;
+
+	} catch ( error ) {
+		console.error( "Error creating product:", error );
+		throw error;
+	};
+};
+
+// ----- edición de producto ----- //
+export const updateProduct = async ( productData ) => {
+	try {
+		const { id, ...data } = productData;
+		const productRef = doc( db, "products", id );
+
+		await setDoc( productRef, data );
+		return id;
+
+	} catch ( error ) {
+		console.error( "Error updating product:", error );
+		throw error;
+	};
+};
+
+// ----- eliminar producto ----- //
+export const deleteProduct = async ( id ) => {
+	try {
+		const productRef = doc( db, "products", id );
+		await deleteDoc( productRef );
+		return id;
+
+	} catch ( error ) {
+		console.error( "Error deleting product:", error );
+		throw error;
+	};
+};
+
+
+// ----- ----- ----- ----- ----- ----- ----- ----- ----- //
+// ----- ----- ----- ----- ----- ----- ----- ----- ----- //
+
 
 // ----- JSON local: traer productos por categoría ----- //
 // Firebase es temporal, al finalizar el curso se reemplazará el fetch de Firebase por el de JSON local
