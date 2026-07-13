@@ -62,7 +62,6 @@ Before the dev server can fully work (loading products and uploading images), yo
 ℹ️ The `.env.local` file is automatically gitignored, your keys stay on your machine.
 
 -----
-<br />
 
 Built by **Agustina Díaz** for the [Talento Tech](https://talentotech.bue.edu.ar/home) ReactJS course.
 
